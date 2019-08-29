@@ -1,5 +1,5 @@
 {% set name = "paintera" %}
-{% set version = "0.19.2" %}
+{% set version = "0.19.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 209e2a82c1a62763f665843560ae229c1619892c2f6fdb73abd26017cab58cf4
+  sha256: aa6060bbfc5373353f1f175c229826bcd43e76d3f63fd8319dab5f00c1c02e36
 
 build:
   number: 0
@@ -25,7 +25,7 @@ requirements:
   run:
     - python >=3
     - jgo >=0.4.0
-    - paintera-conversion-helper
+    - paintera-conversion-helper >=0.8.0
 
 test:
   commands:
