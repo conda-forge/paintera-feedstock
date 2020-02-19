@@ -1,5 +1,5 @@
 {% set name = "paintera" %}
-{% set version = "0.23.0" %}
+{% set version = "0.23.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 992462e9ca8fb82402a2bacaf39fa2f44b90da6983c34f66ba8504b4bd118397
+  sha256: 99693131502311ee4099933ce90c66b6a2ac73b41fb562e68542f7a3aea8127a
 
 build:
   number: 0
