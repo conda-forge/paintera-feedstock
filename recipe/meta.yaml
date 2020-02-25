@@ -1,5 +1,5 @@
 {% set name = "paintera" %}
-{% set version = "0.23.1" %}
+{% set version = "0.23.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 99693131502311ee4099933ce90c66b6a2ac73b41fb562e68542f7a3aea8127a
+  sha256: afc645feba1fdba59077db233533137c950cdb8c215862f848bb11d34ff21c15
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vvv"
+  script: {{ PYTHON }} -m pip install . -vvv
   noarch: python
   entry_points:
     - paintera=paintera:launch_paintera
@@ -35,15 +35,14 @@ test:
     # - paintera --help # use this once Java/maven is figured out on host
     # - generate-paintera-bash-completion --help # use this once Java/maven is figured out on host
     # - test "$(paintera --version 2>&1)" = "{{ version }}"  # [unix] # use this test once --version is changed to stdout instead of logging
-  imports:
-    paintera
+  imports: paintera
 
 about:
   home: https://github.com/saalfeldlab/paintera-cmd
   license: GPL2
   license_family: GPL
   license_file: LICENSE.txt
-  summary: 'Python command line launcher for Paintera'
+  summary: Python command line launcher for Paintera
   doc_url: https://github.com/saalfeldlab/paintera-cmd
   dev_url: https://github.com/saalfeldlab/paintera-cmd
 
