@@ -26,6 +26,15 @@ requirements:
     - openjdk >=11.0.8
     - maven >=3.6.0
     - gtk3 >=2.24.24
+    - xorg-libxi  # [unix]
+    - xorg-libxcursor  # [unix]
+    - xorg-libxdamage  # [unix]
+    - xorg-libxcomposite  # [unix]
+    - xorg-libxrandr  # [unix]
+    - xorg-libxinerama  # [unix]
+    - xorg-libxpm  # [unix]
+    - xorg-libxaw  # [unix]
+    - xorg-libxfixes  # [unix]
 
 test:
   commands:
@@ -51,3 +60,4 @@ extra:
     - hanslovsky
     - igorpisarev
     - axtimwalde
+    - hulbertc

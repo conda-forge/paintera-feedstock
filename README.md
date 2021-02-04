@@ -153,5 +153,6 @@ Feedstock Maintainers
 
 * [@axtimwalde](https://github.com/axtimwalde/)
 * [@hanslovsky](https://github.com/hanslovsky/)
+* [@hulbertc](https://github.com/hulbertc/)
 * [@igorpisarev](https://github.com/igorpisarev/)
 
