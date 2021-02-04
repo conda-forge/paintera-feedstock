@@ -1,5 +1,5 @@
 {% set name = "paintera" %}
-{% set version = "0.25.0" %}
+{% set version = "0.26.0" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,6 @@ source:
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . -vvv
-  noarch: python
   entry_points:
     - paintera=paintera:launch_paintera
     - generate-paintera-bash-completion=paintera:generate_paintera_bash_completion
@@ -21,11 +20,13 @@ requirements:
   host:
     - python >=3
     - pip
-    - jgo >=0.4.0
   run:
     - python >=3
-    - jgo >=0.4.0
+    - jgo >=1.0.0
     - paintera-conversion-helper >=0.8.0
+    - openjdk >=11.0.8
+    - maven >=3.6.0
+    - gtk2 >=2.24.33 # [unix]
 
 test:
   commands:
