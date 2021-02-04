@@ -3,7 +3,7 @@ About paintera
 
 Home: https://github.com/saalfeldlab/paintera-cmd
 
-Package license: GPL2
+Package license: GPL-2.0-or-later
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/paintera-feedstock/blob/master/LICENSE.txt)
 
