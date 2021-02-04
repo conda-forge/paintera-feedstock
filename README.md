@@ -5,11 +5,13 @@ Home: https://github.com/saalfeldlab/paintera-cmd
 
 Package license: GPL2
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/paintera-feedstock/blob/master/LICENSE.txt)
 
 Summary: Python command line launcher for Paintera
 
+Development: https://github.com/saalfeldlab/paintera-cmd
 
+Documentation: https://github.com/saalfeldlab/paintera-cmd
 
 Current build status
 ====================
