@@ -25,7 +25,7 @@ requirements:
     - paintera-conversion-helper >=0.8.0
     - openjdk >=11.0.8
     - maven >=3.6.0
-    - gtk2 >=2.24.33 # [unix]
+    - gtk3 >=2.24.24
 
 test:
   commands:
