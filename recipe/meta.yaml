@@ -10,7 +10,7 @@ source:
   sha256: 7b2cb9ed59925df1e1601e434e538ded7ae932d8145c2d1a09f5e197c9d1c32b
 
 build:
-  number: 2
+  number: 3
   script: {{ PYTHON }} -m pip install . -vvv
   entry_points:
     - paintera=paintera:launch_paintera
