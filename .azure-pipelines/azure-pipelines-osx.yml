@@ -12,6 +12,10 @@ jobs:
         CONFIG: osx_64_python3.6.____cpython
         UPLOAD_PACKAGES: 'True'
         SHORT_CONFIG_NAME: osx_64_python3.6.____cpython
+      osx_64_python3.7.____73_pypy:
+        CONFIG: osx_64_python3.7.____73_pypy
+        UPLOAD_PACKAGES: 'True'
+        SHORT_CONFIG_NAME: osx_64_python3.7.____73_pypy
       osx_64_python3.7.____cpython:
         CONFIG: osx_64_python3.7.____cpython
         UPLOAD_PACKAGES: 'True'
