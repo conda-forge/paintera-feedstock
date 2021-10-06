@@ -1,5 +1,5 @@
 {% set name = "paintera" %}
-{% set version = "0.28.0" %}
+{% set version = "0.29.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c1cd8f9adede668f22e9d3c72ed9b828e286967709abd3329cedb1c430edc31b
+  sha256: fe21dafaa588b0e226f27e60cc6decbf4c474cbda7ee35e436c640aba11d9e62
 
 build:
   number: 0
@@ -42,9 +42,9 @@ test:
     - test -f $PREFIX/bin/paintera  # [unix]
     - test -f $PREFIX/bin/generate-paintera-bash-completion  # [unix]
     # - test -f $PREFIX/share/bash-completion/completions/paintera  # [unix] # use this once there is a good way of running generate-paintera-bash-completion after installation
-    # - paintera --help # use this once Java/maven is figured out on host
+    # - paintera --help
     # - generate-paintera-bash-completion --help # use this once Java/maven is figured out on host
-    # - test "$(paintera --version 2>&1)" = "{{ version }}"  # [unix] # use this test once --version is changed to stdout instead of logging
+    # - test "$(paintera --version 2> /dev/null)" = "{{ version }}"  # [unix]
   imports: paintera
 
 about:
@@ -61,4 +61,4 @@ extra:
     - hanslovsky
     - igorpisarev
     - axtimwalde
-    - hulbertc
+    - cmhulbert
