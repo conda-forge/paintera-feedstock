@@ -1,5 +1,5 @@
 {% set name = "paintera" %}
-{% set version = "0.29.1" %}
+{% set version = "0.30.0" %}
 
 package:
   name: {{ name|lower }}
@@ -26,6 +26,7 @@ requirements:
     - paintera-conversion-helper >=0.8.0
     - openjdk >=11.0.8
     - maven >=3.6.0
+    - blosc
     - gtk3
     - xorg-libxi  # [unix]
     - xorg-libxcursor  # [unix]
