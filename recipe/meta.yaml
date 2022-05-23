@@ -1,5 +1,5 @@
 {% set name = "paintera" %}
-{% set version = "0.29.1" %}
+{% set version = "0.30.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5964988e788c874c75ca7928645bdcfa19f733127083af2892d615a61c8d3086
+  sha256: ee16708ca4bd67c9f4fb5a535aba92798e8aa9eaadde4d03afe91cb62f4f2c8a
 
 build:
   number: 0
@@ -26,6 +26,7 @@ requirements:
     - paintera-conversion-helper >=0.8.0
     - openjdk >=11.0.8
     - maven >=3.6.0
+    - blosc
     - gtk3
     - xorg-libxi  # [unix]
     - xorg-libxcursor  # [unix]
