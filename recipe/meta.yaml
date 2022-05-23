@@ -27,6 +27,7 @@ requirements:
     - openjdk >=11.0.8
     - maven >=3.6.0
     - gtk3
+    - blosc
     - xorg-libxi  # [unix]
     - xorg-libxcursor  # [unix]
     - xorg-libxdamage  # [unix]
