@@ -10,7 +10,7 @@ source:
   sha256: e5a623092b75efbedbf45ab77be892e6d11d754df611e556b67620e0e8319fee
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vvv
   entry_points:
     - paintera=paintera:launch_paintera
@@ -24,7 +24,7 @@ requirements:
     - python
     - jgo >=1.0.0
     - paintera-conversion-helper >=0.8.0
-    - openjdk >=11.0.8
+    - openjdk 11.0.15
     - maven >=3.6.0
     - blosc
     - gtk3
