@@ -1,5 +1,5 @@
 {% set name = "paintera" %}
-{% set version = "0.32.0" %}
+{% set version = "0.32.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a82c76b7720e5195cbf9f74840881c24481f9b7fa1d7ad0f7f8fa5aeaeca8611
+  sha256: 527e246404687c7d51490d6a10959788b4e21a229f68d8c3d4aedb0778431ec4 
 
 build:
   number: 0
@@ -24,7 +24,7 @@ requirements:
     - python
     - jgo >=1.0.0
     - paintera-conversion-helper >=0.8.0
-    - openjdk 11.0.15
+    - openjdk 11.0.9.1 # Update version when https://github.com/conda-forge/openjdk-feedstock/issues/107 is resolved
     - maven >=3.6.0
     - blosc
     - gtk3
